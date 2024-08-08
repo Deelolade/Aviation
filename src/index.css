@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.display{
+  margin: auto;
+  margin-top: 20vh;
+  height: 50vh;
+  width: 45vw;
+  background-color: #FF991F;
+  display: flex;
+}
+.display:hover{
+  transition: ease-in-out 2s;
+  border-radius: 15px;
+}
+
+.display-main{
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  background-color: #DFE1E5;
+  border-radius: 15px;
+  
+}
+.display-main:hover{
+  transition: ease-in-out .5s;
+  border-radius: 5px;
+  transform: scale(1.4);
+}
+.display-main h1{
+  color: #0065FF;
+  font-size: 5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+.display-main h4{
+ color: #A5ADBA;
+
+}
+.NotFoundLink{
+  font-size: 10px;
+  margin-left: 40%;
+  text-decoration: none;
+  
+  
+}
+img{
+  height: 60vh;
+  width: 30vw;
+}
+.about-overall-container{
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(./images/AboutUs.jpg) no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+}
+.contact-overall-container{
+ height: 30vh;
+}
+.coloured{
+  height: 30vh;
+  width: 40vw;
+}
+.white{
+  height: 30vh;
+  width: 60vw;
+}
+li a{
+  color:white;
+  text-decoration: none;
+  line-height: 2rem;
+}
+li a:hover{
+  text-decoration: underline;
+}
+li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+  .main-header{
+      font-size: 40px;
+      color: #000;
+
+  }
+  .main-container{
+      display: flex;
+      grid-template-columns: auto ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .card{
+      margin-top: 10%;
+
+  }
+  .card-title{
+      font-size: 25px;
+      color: #000;
+  }
+  .card-text{
+      font-size:15px;
+      color: #000;
+  }
+}
+
+@media (max-width:600px)  {
+  .about-overall-container{
+      background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(./images/AboutUs.jpg) no-repeat fixed;
+      background-size: cover;
+      
+  } 
+  .about-container{
+      display: flex;
+      grid-template-columns: auto ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  img{
+      height: 60vh;
+      width: 80vw;
+      object-fit: cover;
+  }
+  .about-text-container{
+      color: #fff;
+  }
+  h4{
+      text-align: center;
+  }
+  p{
+      font-size: 15px;
+      text-align: center;
+      
+  }
+}
